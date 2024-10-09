@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Confirm";
+    Layout = null;
+}
+
+<h2>Xác Nhận Thông Tin Đăng Ký</h2>
+<div style="display: flex; align-items: center;">
+    <div style="margin-right: 20px;">
+        <img src="@ViewBag.Avatar" alt="Avatar" style="width:150px;height:150px;">
+    </div>
+    <div>
+        <p><strong>Mã số nhân viên:</strong> @ViewBag.EmpID</p>
+        <p><strong>Họ tên:</strong> @ViewBag.Name</p>
+        <p><strong>Ngày sinh:</strong> @ViewBag.BirthOfDate</p>
+        <p><strong>Email:</strong> @ViewBag.Email</p>
+        <p><strong>Mật khẩu:</strong> @ViewBag.Password</p>
+        <p><strong>Đơn vị:</strong> @ViewBag.Department</p>
+    </div>
+</div>

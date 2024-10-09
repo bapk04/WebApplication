@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Register2";
+    Layout = null;
+}
+
+<form name="f1" action="/baitap2_64131055/Register2" method="post">
+    <div>
+        <table>
+            <tr>
+                <h4>THÔNG TIN SINH VIÊN</h4>
+                <td>
+                    <label>Mã sinh viên:</label>
+                    <input type="text" name="studentId" placeholder="Nhập mã sinh viên" />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Họ và tên:</label>
+                    <input type="text" name="fullName" placeholder="Nhập họ và tên" />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Điểm:</label>
+                    <input type="text" name="score" placeholder="Nhập điểm" />
+                </td>
+            </tr>
+        </table>
+        <div>
+            <input type="submit" value="Đăng ký" />
+        </div>
+    </div>
+</form>

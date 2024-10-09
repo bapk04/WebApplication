@@ -1,0 +1,58 @@
+﻿@model baitap4_64131055.Models.MailInfo_64131055
+
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<title>Chức năng gửi email</title>
+
+<div class="container mt-4">
+    <h2 class="text-left">Chức năng gửi email</h2>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @using (Html.BeginForm("Index", "MailInfor_64131055", FormMethod.Post))
+    {
+        <div class="form-group row">
+            <label for="From" class="col-sm-2 col-form-label">Gửi từ email:</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.From, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Password" class="col-sm-2 col-form-label">Mật khẩu email:</label>
+            <div class="col-sm-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="To" class="col-sm-2 col-form-label">Gửi đến email:</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.To, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Subject" class="col-sm-2 col-form-label">Tiêu đề:</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.Subject, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Body" class="col-sm-2 col-form-label">Nội dung:</label>
+            <div class="col-sm-10">
+                @Html.TextAreaFor(m => m.Body, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <input type="submit" value="Gửi email" class="btn btn-primary" />
+            </div>
+        </div>
+    }
+</div>
