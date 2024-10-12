@@ -34,13 +34,18 @@ namespace baitap4_64131055.Controllers
                 smtp.Send(mail);
 
                 TempData["SuccessMessage"] = "Email đã được gửi thành công!";
-                return RedirectToAction("Index");
+                return RedirectToAction("Mail");
             }
             catch (Exception ex)
             {
                 ViewBag.Error = "Error: " + ex.Message;
                 return View(model);
             }
+        }
+
+        public ActionResult Mail()
+        {
+            return View();
         }
     }
 }

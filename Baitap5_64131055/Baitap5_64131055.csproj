@@ -150,6 +150,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\styleAdmin.css" />
+    <Content Include="emp.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -187,6 +188,9 @@
     <Content Include="Views\Nhanvien_64131055\RegisterEmp.cshtml" />
     <Content Include="Views\MailInfor_64131055\SendMail.cshtml" />
     <Content Include="Views\Changbanner_64131055\ChangeBanner.cshtml" />
+    <Content Include="Views\MailInfor_64131055\Mail.cshtml" />
+    <Content Include="Views\Changbanner_64131055\Index.cshtml" />
+    <Content Include="Views\Nhanvien_64131055\Confirm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

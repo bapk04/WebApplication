@@ -9,6 +9,10 @@ namespace Baitap5_64131055.Controllers
     public class Changbanner_64131055Controller : Controller
     {
         // GET: Changbanner_64131055
+        public ActionResult Index()
+        {
+            return View();
+        }
         public ActionResult ChangeBanner()
         {
             return View();
